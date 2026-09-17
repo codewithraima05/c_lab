@@ -6,12 +6,13 @@ printf("ENTER THE VALUE OF n");
 scanf( "%d", &n);
 for(int i=1;i<=n;i++)
 {
-    for(int j=1;j<=i;j++){
-if(j%i==0)
+if(n%i==0)
 c++;
 }
-if(c==2)
-printf("%d",j);
+if(c==1)
+printf("PRIME NUMBER");
+else{
+    printf("NOT A PRIME NUMBER");
 }
 return 0;
 }
